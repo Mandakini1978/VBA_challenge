@@ -1,3 +1,12 @@
+'This sub routine generates a summary table containg following information :
+'The ticker symbol.
+'Yearly change from opening price at the beginning of a given year to the closing price at the end of that year.
+'The percent change from opening price at the beginning of a given year to the closing price at the end of that year.
+'The total stock volume of the stock and 
+'conditional formatting on Yearly Change column that will highlight positive change  in green and negative change in red.
+
+
+
 Sub VBA_Challenge()
 
  'looping for each worksheet
@@ -108,15 +117,14 @@ Sub VBA_Challenge()
   
   Next ws
 
-  
+  End Sub
 
 
-End Sub
 
 Sub Calculate()
 
-'calculating Greatest pecentage Increasein Value, Greatest percentage Decrease in Value
- 'and Greatest Total Volume from summary table
+'calculating  Greatest percentage Increase in Value, Greatest percentage Decrease in Value
+'and Greatest Total Volume with ticker name from summary table
 
 
   Dim Max_Val As Double
